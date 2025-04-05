@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Network Traffic Globe</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="info-panel">
+        <h2>Network Traffic Monitor</h2>
+        <div class="legend">
+            <div class="legend-item">
+                <div class="color-box normal"></div>
+                <span>Normal Traffic</span>
+            </div>
+            <div class="legend-item">
+                <div class="color-box suspicious"></div>
+                <span>Suspicious Traffic</span>
+            </div>
+        </div>
+        <div id="stats">
+            <p>Total Points: <span id="total-points">0</span></p>
+            <p>Suspicious: <span id="suspicious-count">0</span></p>
+        </div>
+    </div>
+
+    <!-- THREE.js и OrbitControls -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.min.js"></script>
+
+    <!-- Твой скрипт -->
+    <script src="js/main.js"></script>
+</body>
+</html>
